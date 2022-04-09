@@ -1,0 +1,203 @@
+.information{
+    margin: auto;
+    width: 380px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+    animation: MoveInformation 1.2s;
+}
+
+.avatar_page{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hello{
+    width: 100%;
+}
+
+.upload{
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+    animation: MoveBox2 0.8s;
+}
+
+.choose_file{
+    width: 40%;
+    border: 0;
+}
+
+.btn_choose{
+    border: 0;
+    border-radius: 10px;
+}
+
+.greeting{
+    margin-bottom: 20px;
+}
+
+.avatar_page_sub{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.user{
+    font-weight: bold;
+}
+
+
+.subroom_1 , .subroom_2{
+    text-decoration: none;
+    color: black;
+}
+
+
+.tag_btn_create , .tag_btn_join{
+    margin: auto;
+    width: 20%;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: #FF4B2B;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.choose_btn{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* create room */
+
+
+.bander_2 , .bander_3{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.import_nameroom , .import_nameroom_join{
+    margin: auto;
+    margin-top: 200px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    animation: MoveBox 0.8s;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.nameroom{
+    border: 0;
+    background-color: #eee;
+    outline: none;
+    padding: 5px 5px;
+
+}
+
+.create_room , .join_room , .name_of_room{
+    margin-bottom: 10px;
+}
+
+
+.click_btn_2{
+    border: 0;
+    border-radius: 10px;
+    background-color: #FF4B2B;
+    color: white;
+    margin-bottom: 22px;
+    padding: 5px 10px;
+}
+
+.close{
+    text-align: end;
+}
+.close_sub_create , .close_sub_join{
+    padding: 2px 2px;
+}
+.close_sub_create:hover{
+    background-color: #FF4B2B;
+    cursor: pointer;
+    border-radius: 0px 10px 0px 0px;
+    border: 0;
+}
+
+.close_sub_join:hover{
+    background-color: #FF4B2B;
+    cursor: pointer;
+    border-radius: 0px 10px 0px 0px;
+    border: 0;
+}
+
+.tag_btn_create:hover{
+    opacity: 0.8;
+}
+.tag_btn_join:hover{
+    opacity: 0.8;
+}
+.click_btn_2:hover{
+    opacity: 0.8;
+}
+
+.change_picture{
+    border: 1px solid;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.change_picture:hover{
+    opacity: 0.5;
+}
+
+
+@keyframes MoveBox{
+    from{
+        transform: translateY(-200px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes MoveInformation{
+    from{
+        opacity: 0;
+    }to{
+       opacity: 1;
+    }
+}
+
+@keyframes MoveBox2{
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width:380px){
+    .information{
+       width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+<div class="all">
+<div class="tag_you">
+    <div class="room_name">
+       Name Room: <b>{{User.nameroom}}</b> 
+    </div>
+    <div class="choose_different">
+        <img class="avatar" src="/upload/{{User.picture}}" alt="">
+        <b class="username margin">{{User.username}}</b>
+        <i title="Send picture?" class="bi bi-image send_picture_sub margin"></i>
+        <button class="out_button margin">Out Room</button>
+        <div class="send_picture_parent">
+            <div class="triangle"></div>
+        <div class="send_picture">
+            <form class="form_img">
+                <input type="file" name="picture" class="give_picture">
+                <button type="submit" class="send_img" required="" style="width: 50px; height: 25px" >Send</button>
+            </form>
+        </div>
+        </div>
+</div>
+</div>
+
+
+<div class="id">{{User.id}}</div>
+<div class="all_chat">
+    <div class="live_active">
+        Participate
+    </div>
+   
+    <div class="chat">
+        <div class="title_chat">
+             Chat
+        </div>
+        <div class="messenger"></div>
+        <form class="form_chat">
+            <input type="text" class="chat_content" required="" placeholder="Message">
+            <button type="submit" class="send">
+                <i class="bi bi-send-fill"></i>
+            </button>
+        </form>
+    </div>
+</div>
+</div>
+
+
+<div class="thank">
+    <h1 class="title_thank">
+        Thank You!
+    </h1>
+    <div class="check_box_parent">
+         <div class="bi bi-check-lg check_box"></div>
+    </div>
+    <div class="content">
+        Thank you  <b>{{User.username}}</b>  had used web of Bo
+    </div>
+</div>

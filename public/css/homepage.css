@@ -1,0 +1,175 @@
+body{
+    box-sizing: border-box;
+}
+.title_page , .note{
+    text-align: center;
+}
+.click_btn{
+    text-align: center;
+    padding: 7px 11px;
+    color: black;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #DDDDDD;
+    text-decoration: none;
+}
+.click_btn:hover{
+    opacity: 0.7;
+}
+.title_function{
+    text-align: center;
+    font-weight: bold;
+}
+.form{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+.btn_all{
+    width: 800px;
+    margin: auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+.login{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Oauth_2{
+    display: flex;
+}
+
+.form_sub{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.import{
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    padding: 0px 10px;
+    background-color: #eee;
+    border: none;
+}
+.btn_button{
+    border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+    color: white;
+    padding: 8px 50px;
+    font-size: 15px;
+}
+
+
+.size2{
+    margin-bottom: 34px;
+}
+.size{
+    margin-bottom: 20px;
+}
+
+
+/*----------- css bander---------- */
+
+
+
+.bander{
+    z-index: 1;
+    position: fixed;
+    width: 800px;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    color: #FFFFFF;
+}
+
+.login_sub{
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #FF4B2B;
+    animation: move 0.8s;
+}
+
+.signup_sub{
+    color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FF416C ;
+    animation: move2 0.8s;
+}
+
+.btn_button_login{
+    background-color: #FF4B2B;
+}
+
+.btn_button_signup{
+    background-color: #FF416C ;
+}
+
+.btn_sub{
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 5px 30px;
+    border: 1px solid #FFFFFF;
+}
+.tag_signup{
+    margin-bottom: 20px;
+}
+.tag_login{
+    margin-bottom: 10px;
+}
+
+
+@keyframes move{
+    from{
+        transform: translateX(100%)
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes move2{
+    from{
+        transform: translateX(-100%)
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width:800px){
+    .btn_all{
+       width: 100%;
+    }
+}
+
+
+
+
+

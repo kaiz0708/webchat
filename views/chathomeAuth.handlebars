@@ -1,0 +1,67 @@
+<div class="information">
+    <div class="avatar_page">
+        <img class="avatar_page_sub" src="{{User.picture}}" alt="">
+        {{!-- <form class="upload" action="/upload" enctype="multipart/form-data" method="post">
+            <input class="choose_file" type="file" name="upload" multiple>
+            <button class="btn_choose">submit</button>
+        </form> --}}
+    </div>
+    <div class="choose_btn">
+        <h2 class="user">{{User.username}}</h2> 
+        <div class="greeting">
+             Hello đã đến với cái blog nhảm nhí này của Bo , à thì là làm cho vui nên css đơn giản thôi à
+        </div>
+        <div class="tag_btn_create">
+            Create Room
+        </div>
+
+        <div class="tag_btn_join">
+            Join Room
+        </div>
+    </div>
+
+</div>
+
+
+<div class="bander_2">
+         <div class="import_nameroom">
+             <div class="close">
+                 <span class="bi bi-x close_sub_create"></span>
+             </div>
+            <h1 class="title">Create Room</h1>
+            <form class="create_room" action="/chat" method="get">
+                <div class="name_of_room">
+                    NameRoom
+                <input type="text" class="nameroom" name="name_of_room" required="">
+        </div>
+            <button class="click_btn_2" type="submit">Create</button>
+        </form>
+        </div>
+    </div>
+   
+
+
+    <div class="bander_3">
+        <div class="import_nameroom_join">
+            <div class="close">
+                 <span class="bi bi-x close_sub_join"></span>
+             </div>
+            <h1 class="title">Join Room</h1>
+            <form class="join_room" action="/chat" method="get">
+                <div class="name_of_room">
+                    NameRoom
+                <input type="text" class="nameroom" name="name_of_room" required="">
+                </div>
+                <button class="click_btn_2" type="submit">Join</button>
+            </form>
+        </div>
+    </div>
+    
+
+
+
+
+    
+    
+
+    

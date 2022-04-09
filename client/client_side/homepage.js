@@ -1,0 +1,9 @@
+$('.login_sub').hide();
+$('.btn_button_signup').click(function(){
+    $('.signup_sub').hide();
+    $('.login_sub').show();
+})
+$('.btn_button_login').click(function(){
+    $('.login_sub').hide();
+    $('.signup_sub').show();
+})
